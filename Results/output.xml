@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.7 on win32)" generated="20231117 23:35:41.622" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="C:\Users\lahte\Downloads\03_10 - Amazon\amazon\tests">
+<suite id="s1-s1" name="Portfolio" source="C:\Users\lahte\Downloads\03_10 - Amazon\amazon\tests\Portfolio.robot">
+<test id="s1-s1-t1" name="User can search for products" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://ristoxxx.github.io/</arg>
+<arg>firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231117 23:35:41.762" level="INFO">Opening browser 'firefox' to base url 'https://ristoxxx.github.io/'.</msg>
+<status status="PASS" starttime="20231117 23:35:41.762" endtime="20231117 23:35:47.444"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>2023</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20231117 23:35:47.444" endtime="20231117 23:35:47.457"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231117 23:35:47.458" endtime="20231117 23:35:49.068"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20231117 23:35:41.762" endtime="20231117 23:35:49.068"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20231117 23:35:41.636" endtime="20231117 23:35:49.069"/>
+</suite>
+<status status="PASS" starttime="20231117 23:35:41.623" endtime="20231117 23:35:49.070"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Portfolio">Tests.Portfolio</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
