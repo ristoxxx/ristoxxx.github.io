@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+
+name: ui-tests
+
+jobs:
+  automated_tests:
+    name: deploy RF-tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: Robot Framework
+      uses: joonvena/robotframework-docker-action@v1.1
+      with:
+        allowed_shared_memory: 1g
+        browser: chrome
+        robot_threads: 1
+        robot_tests_dir: Tests
+        robot_reports_dir: Reports
+        robot_runner_image: ppodgorsek/robot-framework:latest
