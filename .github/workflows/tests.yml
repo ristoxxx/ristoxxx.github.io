@@ -4,7 +4,7 @@ on:
 name: ui-tests
 
 jobs:
-  automated_tests:
+  test:
     name: deploy RF-tests
     runs-on: ubuntu-latest
     steps:
@@ -25,3 +25,18 @@ jobs:
       with:
         name: reports
         path: Reports
+
+  generate_report:
+    if: always()
+    needs: [test] 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download reports
+      uses: actions/download-artifact@v1
+      with:
+        name: reports
+    - name: Send report to commit
+      uses: joonvena/robotframework-reporter-action@v2.3
+      with:
+        gh_access_token: ${{ secrets.GITHUB_TOKEN }}
