@@ -10,11 +10,13 @@ Library  Collections
 
 
 *** Test Cases ***
-User can search for products
-    [Documentation]  This is some basic info about the test
-    [Tags]  Smoke
-    Open Browser  https://ristoxxx.github.io/  firefox
-    Wait Until Page Contains  2023
+User can open web page
+    [Documentation]                   This is some basic info about the test
+    [Tags]                            Smoke
+    Open Browser                      https://ristoxxx.github.io/  firefox
+    Wait Until Page Contains          2023
+    Click Element                     xpath=/html/body/footer/div[1]/div/div/a[4]
+    Sleep     3s
     Close Browser
 
 *** Keywords ***
