@@ -2,6 +2,8 @@
 Resource    ./PO/Footer.robot
 
 *** Keywords ***
-Test footer links
+Test github link
+    [Arguments]    ${URL}
     Footer.Test github link
+    #Footer.Test phone link          ${URL}
 
