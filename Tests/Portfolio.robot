@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  This is some basic info about the whole suite
-Library  SeleniumLibrary
-Library  Collections
+#Library  SeleniumLibrary
+#Library  Collections
 Resource    ../Resources/Common.robot
 Resource    ../Resources/PortfolioApp.robot
 Test Setup          Open and validate start page
@@ -13,13 +13,10 @@ Test Teardown       Close web test
 
 
 *** Test Cases ***
-
-
-User can use github link
+User can use footer links
     [Documentation]                     Test that Github link works
     [Tags]                              Smoke
-    Click Element                       xpath=/html/body/footer/div[1]/div/div/a[4]
-    Wait Until Page Contains            ristoxxx
+    PortfolioApp.Test footer links
 
 
 *** Keywords ***
