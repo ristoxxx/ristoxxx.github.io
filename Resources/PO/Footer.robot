@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource    ../../Tests/Portfolio.robot
+Resource    /Resources/Common.robot
+
 *** Keywords ***
 Test github link
     go to   ${URL}

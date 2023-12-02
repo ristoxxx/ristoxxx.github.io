@@ -10,17 +10,17 @@ Test Teardown       End web test
 # robot -d results tests
 
 *** Variables ***
-${URL}                                  https://ristoxxx.github.io/
-${BROWSER}                              firefox
+#${URL}                                  https://ristoxxx.github.io/
+#${BROWSER}                              firefox
 
 *** Test Cases ***
 Validte start page
     [Documentation]                     Test
     [Tags]                              Smoke
-    Common.Validte start page           ${URL}
+    Common.Validte start page
 
 Test github linki
-    PortfolioApp.Test github link       ${URL}
+    PortfolioApp.Test github link
 
 
 

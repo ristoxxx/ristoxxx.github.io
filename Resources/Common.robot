@@ -2,8 +2,8 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-#${URL}                  https://ristoxxx.github.io/
-#${BROWSER}              firefox
+${URL}                  https://ristoxxx.github.io/
+${BROWSER}              firefox
 ${KEY_TAG_START_PAGE}   2023
 *** Keywords ***
 Start web test
