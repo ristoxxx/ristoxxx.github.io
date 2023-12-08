@@ -15,8 +15,8 @@ Test phone link
 
 Test linkedin link
     go to    ${URL}
-    Click Element                       Xpath=/html/body/footer/div[1]/div/div/a[3]
+    Click Element                       Xpath=/html/body/footer/div[1]/div/div/a[2]
 
 Test email link
     go to    ${URL}
-    click element                       Xpath=/html/body/footer/div[1]/div/div/a[2]
+    click element                       Xpath=/html/body/footer/div[1]/div/div/a[3]
