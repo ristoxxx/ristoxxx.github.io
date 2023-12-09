@@ -15,6 +15,5 @@ End web test
     close browser
 
 Validte start page
-    [Arguments]         ${URL}
     go to               ${URL}
     wait until page contains      ${KEY_TAG_START_PAGE}
