@@ -51,6 +51,11 @@ function createProject(id, count) {
     h3Element.appendChild(aElement);                // Append the 'a' element inside the 'h3' element
 
     ekaDiv.appendChild(h3Element);                  // Append the 'h3' element inside the 'div' with id 'id1'
+
+    var pElement = document.createElement('p');     // Create a p element
+    pElement.textContent = projectData[count].description; // Set the text content for the 'p' element
+
+    ekaDiv.appendChild(pElement);                    // Append the 'p' element inside the 'div' with id 'id1'
 }
 
 for (let i = 0; i < projectData.length; i++) {
