@@ -31,4 +31,12 @@ const projectData = [
     }
     ];
 
-export default projectData;
+//function getProjectData(projectData) {
+//    return projectData;
+//}
+function getProjectData() {
+    return 1;
+}
+
+export { getProjectData };
+//export default projectData;
