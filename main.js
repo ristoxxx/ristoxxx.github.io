@@ -31,14 +31,6 @@ const projectData = [
     }
     ];
 
-//const title = document.getElementById('id1');
-// Populating the id1 element with text
-//id1.innerHTML = "test";
-
-//let header = document.createElement('h3');
-//let link = header.createElement('a');
-//  link.innerText = `Select a`;
-//  id1.appendChild(header);
 function createProject(id, count) {
     var ekaDiv = document.getElementById(id);
 
@@ -58,6 +50,7 @@ function createProject(id, count) {
     ekaDiv.appendChild(pElement);                    // Append the 'p' element inside the 'div' with id 'id1'
 }
 
-for (let i = 0; i < projectData.length; i++) {
+for (let i = 0; i < projectData.length; i = i + 2) {
     createProject('id1', i);
+    createProject('id2', i +1);
 }
