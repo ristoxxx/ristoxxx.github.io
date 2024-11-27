@@ -2,12 +2,12 @@ const projectData = [
     {
         name: "Academic Work",
         description: "Company wide system renewal project of corporation size of company.",
-        link: "https://www.academicwork.fi"
+        link: "https://www.academicwork.fi/"
     },
     {
         name: "Ensto",
         description: "Development of an IoT system designed to generate alarms based on specific metrics. Throughout this project, I gained hands-on experience and familiarity with various systems and technologies, including: • LoraWan • NB-IoT • MQTT",
-        link: "https://www.ensto.com"
+        link: "https://www.ensto.com/en/"
     },
     {
         name: "Pop-Up meetingrooms project",
