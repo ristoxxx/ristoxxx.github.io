@@ -1,3 +1,12 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     padding-top: 50px; /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
 }
