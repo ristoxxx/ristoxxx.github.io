@@ -37,7 +37,7 @@ function createProject(id, count) {
     var h3Element = document.createElement('h3');   // Create an h3 element
 
     var aElement = document.createElement('a');     // Create an a element
-    aElement.href = '#';                            // Set the href attribute for the 'a' element
+    aElement.href = projectData[count].link;                            // Set the href attribute for the 'a' element
     aElement.textContent = projectData[count].name;        // Set the text content for the 'a' element
 
     h3Element.appendChild(aElement);                // Append the 'a' element inside the 'h3' element
