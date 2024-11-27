@@ -7,7 +7,7 @@ const projectData = [
     {
         name: "Ensto",
         description: "Development of an IoT system designed to generate alarms based on specific metrics. Throughout this project, I gained hands-on experience and familiarity with various systems and technologies, including: • LoraWan • NB-IoT • MQTT",
-        link: "https://www.ensto.com/en/"
+        link: "https://www.ensto.com/"
     },
     {
         name: "Pop-Up meetingrooms project",
